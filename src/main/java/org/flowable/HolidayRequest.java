@@ -21,6 +21,7 @@ import org.flowable.task.api.Task;
 public class HolidayRequest {
 	public static void main(String[] args) {
 		//创建流程引擎实例
+		Abc A=new Abc();
 		ProcessEngineConfiguration cfg=new StandaloneProcessEngineConfiguration().
 				setJdbcUrl("jdbc:mysql://localhost:3306/flowable?characterEncoding=utf8&serverTimezone=GMT%2b8&nullCatalogMeansCurrent=true")
 				.setJdbcUsername("root")
@@ -29,6 +30,7 @@ public class HolidayRequest {
 				.setDatabaseSchemaUpdate(ProcessEngineConfiguration.DB_SCHEMA_UPDATE_TRUE);
 		ProcessEngine processEngine = cfg.buildProcessEngine();
 		System.out.print("创建完成！！！");
+		XYZ x=new XYZ();
 		//部署流程文件
 		RepositoryService repositoryService = processEngine.getRepositoryService();
 		Deployment deployment = repositoryService.createDeployment()
