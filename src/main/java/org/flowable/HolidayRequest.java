@@ -22,6 +22,7 @@ public class HolidayRequest {
 	public static void main(String[] args) {
 		//创建流程引擎实例
 		Abc A=new Abc();
+		A.toString();
 		ProcessEngineConfiguration cfg=new StandaloneProcessEngineConfiguration().
 				setJdbcUrl("jdbc:mysql://localhost:3306/flowable?characterEncoding=utf8&serverTimezone=GMT%2b8&nullCatalogMeansCurrent=true")
 				.setJdbcUsername("root")
